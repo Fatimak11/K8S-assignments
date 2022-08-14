@@ -8,8 +8,8 @@ metadata:
 
 spec:
   containers:
-    - name: nginx:alpine
-      image: nginx:alpine
+    - name: nginx
+      image: nginx
 
     - name: redis
       image: redis
