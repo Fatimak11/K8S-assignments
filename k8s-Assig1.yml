@@ -1,5 +1,5 @@
 apiVersion: apps/v1
-kind: ReplicaSet
+kind: pod
 metadata:
   name: multi-pod
   labels:
