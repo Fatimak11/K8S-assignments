@@ -5,21 +5,15 @@ metadata:
   label:
     app: multi-pod
     kind: frontend
-spec:
-  template:
-    metadata:
-      name: multi-pod
-      labels:
-        app: myFirstPod
-        type: frontend
-    spec:
-      containers:
-        - name: nginx:alpine
-          image: nginx:alpine
 
-        - name: redis
-          image: redis
-        
-        - name: memcached
-          image: memcached
+spec:
+  containers:
+    - name: nginx:alpine
+      image: nginx:alpine
+
+    - name: redis
+      image: redis
+      
+    - name: memcached
+      image: memcached
  
