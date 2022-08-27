@@ -17,11 +17,11 @@ spec:
         - name: busybox
           image: busybox:latest
           args:
-            - /bin/sh
-            - -c
-            - sleep 3600
+          - /bin/sh
+          - -c
+          - sleep 3600
 
   replicas: 3
   selector:
     matchLabels:
-      type: VM
+     type: VM
