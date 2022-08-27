@@ -4,21 +4,19 @@ metadata:
   name: redis
   labels:
     app: redis
-    type: frontend
 spec:
   template:
     metadata:
       name: redis-pod
       labels:
         app: redis
-        type: frontend
     spec:
       containers:
         - name: redis
           image: redis:4-alpine
           ports:
-          - containerPort: 6379
+           - containerPort: 6379
   replicas: 1
   selector:
     matchLabels:
-      type: frontend
+      app: redis
