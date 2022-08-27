@@ -5,15 +5,13 @@ metadata:
   labels:
     app: multi-pod
     kind: frontend
-
 spec:
   containers:
-    - name: nginx
-      image: nginx
+   - name: nginx
+     image: nginx
 
-    - name: redis
-      image: redis
-      
-    - name: memcached
-      image: memcached
- 
+   - name: redis
+     image: redis
+       
+   - name: memcached
+     image: memcached
